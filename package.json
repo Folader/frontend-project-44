@@ -21,6 +21,9 @@
     "brain-games": "bin/brain-games.js"
   },
   "dependencies": {
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "asciinema-player": "^3.12.1",
+    "eslint": "^9.39.1",
     "readline-sync": "^1.4.10"
   }
 }
