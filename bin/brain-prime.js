@@ -4,6 +4,7 @@ import prime from '../src/games/brain-prime.js'
 import greetPlayer from '../src/cli.js'
 
 const game = (name) => {
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
   let chosenGame = prime
   for (let i = 0; i < 3; i++) {
     let { result, correctAnswer, answer } = chosenGame()

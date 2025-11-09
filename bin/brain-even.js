@@ -5,6 +5,7 @@ import greetPlayer from '../src/cli.js'
 
 const game = (name) => {
   let chosenGame = calc
+  console.log('Answer "yes" if the number is even, otherwise answer "no".')
   for (let i = 0; i < 3; i++) {
     let { result, correctAnswer, answer } = chosenGame()
     if (result) {

@@ -4,6 +4,7 @@ import progression from '../src/games/brain-progression.js'
 import greetPlayer from '../src/cli.js'
 
 const game = (name) => {
+  console.log('What number is missing in the progression?')
   let chosenGame = progression
   for (let i = 0; i < 3; i++) {
     let { result, correctAnswer, answer } = chosenGame()
