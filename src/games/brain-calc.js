@@ -7,14 +7,14 @@ const calc = () => {
   let allOperation = ['+', '-', '*']
   let selectedOperation = allOperation[operationNumber]
   console.log(`Question: ${numberOne} ${selectedOperation} ${numberTwo}`)
-  let answer = Number(readlineSync.question('Your answer: '))
+  let answer = readlineSync.question('Your answer: ')
   const operations = {
     '+': (a, b) => a + b,
     '-': (a, b) => a - b,
     '*': (a, b) => a * b,
   }
   const correctAnswer = operations[selectedOperation](numberOne, numberTwo)
-  let result = answer === correctAnswer
+  let result = Number(answer) === correctAnswer
   return { result, correctAnswer, answer }
 }
 

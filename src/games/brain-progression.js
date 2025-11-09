@@ -18,8 +18,8 @@ const progressionGame = () => {
   const correctAnswer = gameProgression[deleteNum]
   gameProgression[deleteNum] = '..'
   console.log(`Question: ${gameProgression.join(' ')}`)
-  let answer = Number(readlineSync.question('Your answer: '))
-  let result = answer === correctAnswer
+  let answer = readlineSync.question('Your answer: ')
+  let result = Number(answer) === correctAnswer
   return { result, correctAnswer, answer }
 }
 
