@@ -1,25 +1,8 @@
 #!/usr/bin/env node
 
-import calc from '../src/games/brain-even.js'
+import even from '../src/games/brain-even.js'
 import greetPlayer from '../src/cli.js'
-
-const game = (name) => {
-  let chosenGame = calc
-  console.log('Answer "yes" if the number is even, otherwise answer "no".')
-  for (let i = 0; i < 3; i++) {
-    let { result, correctAnswer, answer } = chosenGame()
-    if (result) {
-      console.log('Correct!')
-    }
-    else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`)
-      return
-    }
-  }
-  return console.log(`Congratulations, ${name}!`)
-}
+import game from '../src/index1.js'
 
 let name = greetPlayer()
-game(name)
-
-export default game
+game(name, even)
