@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync'
 
 const prime = (number) => {
   let i = 2
-  while (i ** 2 < number) {
+  while (i ** 2 <= number) {
     if (number % i === 0) {
       return false
     }
